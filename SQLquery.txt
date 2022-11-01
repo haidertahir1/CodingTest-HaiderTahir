@@ -1,0 +1,11 @@
+FIND second highest salary 
+1) MAX approach
+
+
+Select * from Employess order by Salary desc
+
+Select MAX(salary) from Employee
+where salary < (select MAX (salary from Employee))
+
+
+( according to this method  "zee" , 5000 have second highest salary)
